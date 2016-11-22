@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rapid Alert</title>
+
+<link type="text/css" rel="stylesheet" media="all"	href="{@path}skin/style/main.css" />
+<link type="text/css" rel="stylesheet" media="all"	href="{@path}skin/style/normalize.css" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script type="text/javascript" src="{@path}skin/scripts/main.js"></script>
+<script type="text/javascript" src="{@path}skin/scripts/plugins.js"></script>
+<script type="text/javascript" src="{@path}skin/scripts/infrastructure.js"></script>
+<script type="text/javascript" src="{@path}skin/scripts/vendor/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="{@path}skin/scripts/vendor/modernizr-2.6.2.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2"></script>
+
+{@style}
+{@script}
+</head>
+
+<body class="one-sidebar sidebar-left" onload="{@onload}">
+<div id="page">
+	<div id="page-inner">
+		<div id="header">
+			<div id="header-inner" class="clear-block">
+				
+				<div id="header-bar">
+					<div id="header-bar-inner" class="region region-header-bar">
+						<h3 id="search-title"></h3>
+						<div id="search-box">
+{@logoutInfo}
+						</div>
+					</div>
+				</div>
+			<!-- /#header-bar-inner, /#header-bar -->
+			</div>
+		</div>
+		<!-- /#header-inner, /#header -->
+		<div id="main">
+			<div id="main-inner" class="clear-block with-navbar">
+			
+				<div id="navbar">
+					<div id="navbar-inner" class="region region-navbar">
+						<div id="primary">
+							<ul class="links">
+<!--li><a href="{@path}index.jsp">Home</a></li  -->
+{@nav}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /#navbar-inner, /#navbar -->
+				<div id="topbanner"></div>
+				<!-- /#topbanner -->
+				<div id="content">
+					<div id="content-inner">
+						<div id="content-header">
+	<div class="header" id="top">
+
+		<div class="wrapper">
+
+			<h1>
+				<a href="index.jsp"><em>rapid</em>Alert</a>
+			</h1>
+
+			<h2>Please note this site is still under development</h2>
+
+		</div>
+
+	</div>
+							</div>
+						<!-- /#content-header -->
+						<div id="content-area">
+							<div id="node-105" class="node node-type-page">
+								<div class="node-inner">
+									<div class="content">
+{@content}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+<Context path="/rapidalert" docBase="rapidalert" reloadable="true">
+<Resource name="jdbc/rapidalert" auth="Container" type="javax.sql.DataSource" 
+	driverClassName="org.postgresql.Driver"
+	url="jdbc:postgresql://localhost/rapidalert" username="rapidalert"
+	password="I'maLert" maxActive="40" maxIdle="10" maxWait="1000" 
+	removeAbandoned="true" removeAbandonedTimeout="60" logAbandoned="true"
+	/>
+	
+	<Environment name="rapidalert/rss/rss.url" value="http://www.geonet.org.nz/quakes/services/felt.rss" type="java.lang.String" override="false"/>
+
+	<Environment name="rapidalert/mail/mail.host" value="localhost" type="java.lang.String" override="false"/>
+	
+</Context>
